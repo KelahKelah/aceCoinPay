@@ -1,12 +1,17 @@
 import {
-  cardImg,
   checkIcon,
   masterCardIcon,
   menuIcon,
   logo,
   closeIcon,
   editIcon,
+  master,
+  chipIcon,
+  wifiIcon,
+  appleIcon,
+  receiptIcon
 } from "../../assets/images";
+import './style.css'
 
 
 export const Checkout = () => {
@@ -14,6 +19,7 @@ export const Checkout = () => {
   return (
     < div className="page-wrap" >
       <img className="close-icon" src={closeIcon} alt="close icon" />
+
       <div className="card-detail-wrap">
         <div className="header-wrap">
           <img src={logo} alt="logo" />
@@ -98,7 +104,55 @@ export const Checkout = () => {
       </div>
 
       <div className="card-image-wrap">
-        <img src={cardImg} alt="" />
+        <div className="mini-card-detail">
+          <div className="icon-wrap">
+            <img src={chipIcon} alt="" />
+            <img src={wifiIcon} alt="" />
+          </div>
+
+          <p className="text">Jonathan Micheal</p>
+          <p className="title">.... 3456</p>
+
+          <div className="master-wrap">
+            <p className="title">09/22</p>
+            <img src={master} alt="" />
+          </div>
+        </div>
+
+        <div className="order-detail">
+          <div className="product-detail-wrap">
+            <p className="text">Company</p>
+            <img src={appleIcon} alt="" />
+            <h6 className="title">Apple</h6>
+          </div>
+
+          <div className="product-detail-wrap">
+            <p className="text">Order Number</p>
+            <h6 className="title">1266201</h6>
+          </div>
+
+          <div className="product-detail-wrap">
+            <p className="text">Product</p>
+            <h6 className="title">Macbook Air</h6>
+          </div>
+
+          <div className="product-detail-wrap">
+            <p className="text">VAT(20%)</p>
+            <h6 className="title">$100:00</h6>
+          </div>
+
+          <div className="border"></div>
+
+          <div className="product-detail-wrap">
+            <div>
+              <p className="pay-text">You have to Pay</p>
+              <h5 className="amount">549.99 USD</h5>
+            </div>
+            <img src={receiptIcon} alt="" />
+          </div>
+
+        </div>
+
       </div>
     </div >
 
