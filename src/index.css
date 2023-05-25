@@ -21,18 +21,21 @@ a:hover {
 }
 
 body {
-  margin: 0;
+
+  margin: auto;
   display: flex;
   place-items: center;
   min-width: 320px;
+  max-width: 1440px;
   min-height: 100vh;
-  box-sizing: border-box;
 
 
   background-image: url('./assets/images/backgroundImgae.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
+
 }
 
 h1 {
