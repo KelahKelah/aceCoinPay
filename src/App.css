@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: auto;
+  max-width: 100%;
 }
 
 .page-wrap {
@@ -9,10 +8,12 @@
   display: flex;
   justify-content: space-between;
   padding-inline: 40px;
-  padding-block: 45px;
+  padding-block: 50px;
   width: 100%;
-  /* height: 100; */
+  height: 100%;
   position: relative;
+
+  margin: auto;
 }
 
 .close-icon {
@@ -27,28 +28,19 @@
 
 .card-image-wrap {
   width: 27%;
-  /* background-color: aqua; */
 }
 
 .cardnumber-input-field {
-  width: 84.5%;
+  width: 90%;
   padding-inline: 30px;
-  padding-block: 10px;
+  padding-block: 15px;
   border: #e6e6e6 1px solid;
   border-radius: 5px;
 }
 
-.input-field {
-  width: 96%;
-  /* padding-inline: 30px; */
-  padding-block: 10px;
-  border: #e6e6e6 1px solid;
-  border-radius: 5px;
-}
 
-.input-field-wrap {
-  /* width: 100% ; */
-}
+
+
 
 .cardnumber-input-field::placeholder {
   color: #e6e6e6;
@@ -66,7 +58,6 @@
   left: 10px;
   top: 10px;
   object-fit: contain;
-
 }
 
 .check-icon {
@@ -78,10 +69,10 @@
   object-fit: contain;
 }
 
-.card-image-wrap img {
-  height: 410px;
+.card-image-wrap>img {
+  height: 480px;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .header-wrap {
@@ -94,7 +85,9 @@
   width: 120px;
 }
 
-.card-number-wrap {}
+.card-number-wrap {
+  margin-block-start: 25px;
+}
 
 .card-number-container {
   display: flex;
@@ -115,19 +108,48 @@
 .card-number-container div:nth-child(2) p {
   color: #0052cc;
   font-size: 12px;
+  font-weight: 600;
 }
 
 .cvv-wrap {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-block-start: 20px;
-
+  margin-block-start: 25px;
 }
 
 .cvv-wrap div:nth-child(2) {
   width: 50%;
-  /* background: #0052cc; */
+  position: relative;
+}
+
+.cvv-wrap div:nth-child(1) {
+  width: 50%;
+}
+
+.input-field {
+  width: 80.5%;
+  padding-inline: 30px;
+  padding-block: 15px;
+  border: #e6e6e6 1px solid;
+  border-radius: 5px;
+}
+
+.expiry-inputs {
+  display: flex;
+  align-items: center;
+}
+
+.expiry-inputs span {
+  margin-inline: 20px;
+}
+
+.menu-icon {
+  position: absolute;
+  right: 35px;
+  top: 10px;
+  height: 20px;
+  width: 20px;
 }
 
 .title {
@@ -166,7 +188,7 @@
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 1.2em 1.2em;
   font-size: 0.9em;
   width: 100%;
   font-weight: 500;
@@ -175,7 +197,7 @@ button {
   color: #fff;
   cursor: pointer;
   transition: border-color 0.25s;
-  margin-block-start: 20px;
+  margin-block-start: 25px;
 }
 
 button:hover {
@@ -185,4 +207,45 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media screen and (max-width: 920px) {
+  .page-wrap {
+    width: 90%;
+  }
+
+  .card-image-wrap>img {
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardnumber-input-field {
+    width: 83%;
+  }
+
+  .input-field {
+    width: 66%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .page-wrap {
+    flex-wrap: wrap;
+    height: 100vh;
+
+  }
+
+  .card-detail-wrap {
+    width: 100%;
+  }
+
+  .card-image-wrap {
+    width: 100%;
+    margin-block-start: 20px;
+  }
+
+  .card-image-wrap img {
+    height: auto;
+  }
 }
