@@ -2,32 +2,75 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
+:root {}
 
-
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.page-wrap {
+  /* background-color: white; */
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 45px;
+  padding-block: 40px;
+  width: 100%;
+  /* height: 100; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.card-detail-wrap {
+  width: 68%;
 }
 
-.card {
-  padding: 2em;
+.card-image-wrap {
+  width: 27%;
+  /* background-color: aqua; */
 }
 
-.read-the-docs {
+.card-image-wrap img {
+  height: 410px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-number-wrap {
+  display: flex;
+
+}
+
+.cvv-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 14px;
   color: #888;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ccc;
+}
+
+.time-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.time-wrap span {
+  background-color: #202a50;
+  border-radius: 5px;
+  text-align: center;
+  margin-inline: 1px;
+  height: 30px;
+  width: 20px;
 }
