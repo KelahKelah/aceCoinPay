@@ -141,7 +141,10 @@ export const Checkout = () => {
             <h6 className="title">$100:00</h6>
           </div>
 
+          <div className="left-circle"></div>
           <div className="border"></div>
+          <div className="right-circle"></div>
+
 
           <div className="product-detail-wrap">
             <div>
