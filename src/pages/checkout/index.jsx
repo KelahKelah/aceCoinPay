@@ -126,8 +126,11 @@ export const Checkout = () => {
         <div className="order-detail">
           <div className="product-detail-wrap">
             <p className="text">Company</p>
-            <img src={appleIcon} alt="" />
-            <h6 className="title">Apple</h6>
+
+            <div className="product-detail-apple">
+              <img src={appleIcon} alt="" />
+              <h6 className="title">Apple</h6>
+            </div>
           </div>
 
           <div className="product-detail-wrap">
@@ -151,7 +154,7 @@ export const Checkout = () => {
 
 
           <div className="product-detail-wrap">
-            <div>
+            <div className="product-detail-amount">
               <p className="pay-text">You have to Pay</p>
               <h5 className="amount">549.99 USD</h5>
             </div>
