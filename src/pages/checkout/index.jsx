@@ -82,9 +82,13 @@ export const Checkout = () => {
           </div>
 
           <div className="expiry-inputs">
-            <input className="input-field" placeholder="09" />
+            <div className="first-input">
+              <input className="input-field" placeholder="09" />
+            </div>
             <span>/</span>
-            <input className="input-field" placeholder="22" />
+            <div className="second-input">
+              <input className="input-field" placeholder="22" />
+            </div>
           </div>
         </div>
 
