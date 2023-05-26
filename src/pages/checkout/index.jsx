@@ -110,7 +110,7 @@ export const Checkout = () => {
             <img src={wifiIcon} alt="" />
           </div>
 
-          <p className="text">Jonathan Micheal</p>
+          <p className="name">Jonathan Micheal</p>
           <p className="title">.... 3456</p>
 
           <div className="master-wrap">

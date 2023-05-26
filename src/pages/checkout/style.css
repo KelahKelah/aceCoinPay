@@ -218,8 +218,9 @@ button:focus-visible {
 .mini-card-detail {
     color: #d9d9d9;
     border: 1px solid #f1f1f1;
-    border-radius: 5px;
+    border-radius: 10px;
     background: #fff;
+    /* background-color: #0052cc; */
     padding: 20px;
 
 
@@ -259,6 +260,7 @@ button:focus-visible {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-block-start: 20px;
 }
 
 .master-wrap img {
@@ -278,6 +280,14 @@ button:focus-visible {
 
 .pay-text {
     margin: 0;
+}
+
+.name {
+    margin-block-start: 95px;
+    margin-inline-end: 27px;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #666;
 }
 
 @media screen and (max-width: 920px) {
@@ -308,4 +318,17 @@ button:focus-visible {
         width: 100%;
     }
 
+    .mini-card-detail {
+        width: 75%;
+        bottom: 200px;
+
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .mini-card-detail {
+        width: 70%;
+        /* bottom: 200px; */
+    }
 }
